@@ -12,6 +12,8 @@
   </style>
 </head>
 <body class="antialiased text-gray-800">
+<div class="top-lang-toggle"><button id="langPt">PT</button><button id="langEn">EN</button></div>
+
 
   <header class="bg-white shadow-sm sticky top-0 z-30">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -180,7 +182,7 @@
     <h3 class="text-2xl font-semibold" data-lang="pt">Marcar uma sessão</h3>
     <h3 class="text-2xl font-semibold" data-lang="en">Book a session</h3>
     <p class="mt-2 text-gray-600" data-lang="pt">Use o formulário abaixo ou contacte por WhatsApp.</p>
-    <p class="mt-2 text-gray-600" data-lang="en">Use the form below or contact via WhatsApp.</p>
+    <p class="mt-2 text-gray-600" data-lang="en">Use the form below <span data-lang="pt">ou contacte via <a href="https://wa.me/351913230273" target="_blank">WhatsApp</a></span><span data-lang="en">or contact via <a href="https://wa.me/351913230273" target="_blank">WhatsApp</a></span>.</p>
 
     <div class="mt-6 grid gap-6 md:grid-cols-2 items-start">
       <div>
@@ -207,10 +209,8 @@
           <textarea name="notes" placeholder="Notas de saúde ou pedidos / Health notes or requests" class="p-3 border rounded" rows="4"></textarea>
 
           <div class="flex items-center gap-3">
-            <button type="submit" id="bookingSubmit" class="px-5 py-3 rounded-md" style="background-color:#059669 !important; color:#ffffff !important;">
-              Enviar pedido / Send request
-            </button>
-            <p class="text-sm text-gray-600">ou ligue / or call <strong>+351 913 230 273</strong></p>
+            <button id="bookingSubmit" class="bg-green-600 text-white py-3 px-6 rounded"><span data-lang="pt">Enviar pedido</span><span data-lang="en">Send request</span></button>
+            <p class="text-sm text-gray-600"><span data-lang="pt">ou contacte via <a href="https://wa.me/351913230273" target="_blank">WhatsApp</a></span><span data-lang="en">or contact via <a href="https://wa.me/351913230273" target="_blank">WhatsApp</a></span></strong></p>
           </div>
         </form>
       </div>
@@ -362,6 +362,24 @@ indicators.forEach(b =>
   function applyLang(lang) {
     document.querySelectorAll('[data-lang]').forEach(function(el){
       el.style.display = (el.getAttribute('data-lang') === lang) ? '' : 'none';
+    });
+  }
+  var btnPt = document.getElementById('langPt');
+  var btnEn = document.getElementById('langEn');
+  if (btnPt) btnPt.addEventListener('click', function(){ applyLang('pt'); localStorage.setItem('site_lang','pt'); });
+  if (btnEn) btnEn.addEventListener('click', function(){ applyLang('en'); localStorage.setItem('site_lang','en'); });
+  var saved = localStorage.getItem('site_lang') || 'pt';
+  document.addEventListener('DOMContentLoaded', function(){ applyLang(saved); });
+  applyLang(saved);
+})();
+</script>
+
+
+<script id="lang-script">
+(function(){
+  function applyLang(lang) {
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      try{ el.style.display = (el.getAttribute('data-lang') === lang) ? '' : 'none'; }catch(e){}
     });
   }
   var btnPt = document.getElementById('langPt');
