@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Joana Ferreira — Massagem terapêutica</title>
+  <meta name="description" content="Massagem profissional em Santarém — relaxamento, DLM, massagem desportiva e deslocações. Marque com Joana Ferreira." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .hero-bg{ background-size: cover; background-position: center; transition: background-image 0.8s ease-in-out; }
+    .slide-indicators button{ width:10px; height:10px; border-radius:50%; border:none; margin:0 6px; }
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+
+  <header class="bg-white shadow-sm sticky top-0 z-30">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3">
+        <img src="assets/logo.avif" alt="logo" class="w-10 h-10 rounded-full object-cover">
+        <div>
+          <h1 class="text-lg font-semibold">Joana Ferreira</h1>
+          <p class="text-xs text-gray-500" data-lang="pt">Massagista • Santarém</p>
+          <p class="text-xs text-gray-500" data-lang="en">Massage Therapist • Santarém</p>
+        </div>
+      </a>
+      <div class="flex items-center gap-4">
+        <nav class="hidden md:flex items-center gap-4">
+          <a href="#services" class="text-sm hover:underline" data-lang="pt">Serviços</a>
+          <a href="#services" class="text-sm hover:underline" data-lang="en">Services</a>
+          <a href="#about" class="text-sm hover:underline" data-lang="pt">Sobre</a>
+          <a href="#about" class="text-sm hover:underline" data-lang="en">About</a>
+          <a href="#book" class="text-sm hover:underline" data-lang="pt">Marcar</a>
+          <a href="#book" class="text-sm hover:underline" data-lang="en">Book</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="langPt" class="px-2 py-1 border rounded text-sm">PT</button>
+          <button id="langEn" class="px-2 py-1 border rounded text-sm">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO with slider -->
+    
+<section id="hero" class="relative w-full h-[60vh] flex items-center justify-center text-white"
+         style="background-image:url('assets/banner_top.png');background-size:cover;background-position:center;">
+  <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+  <div class="relative z-10 text-center px-6">
+    <h1 class="text-4xl font-bold mb-4" data-lang="pt">Massagens Terapêuticas</h1>
+    <h1 class="text-4xl font-bold mb-4" data-lang="en">Therapeutic Massages</h1>
+    <p class="text-lg" data-lang="pt">Cuidar do seu bem‑estar físico e emocional.</p>
+    <p class="text-lg" data-lang="en">Caring for your physical and emotional well‑being.</p>
+  </div>
+</section>
+
+
+<section id="services" class="py-16">
+<div class="max-w-6xl mx-auto px-6 my-6">
+  <div class="w-full h-48 md:h-64 relative overflow-hidden rounded-lg shadow" id="services-slider">
+    <img src="assets/massage1.jpg" class="service-slide absolute inset-0 w-full h-full object-contain bg-black" style="opacity:1;transition:opacity .6s;"/>
+    <img src="assets/massage2.jpg" class="service-slide absolute inset-0 w-full h-full object-contain bg-black" style="opacity:0;transition:opacity .6s;"/>
+    <img src="assets/massage3.jpg" class="service-slide absolute inset-0 w-full h-full object-contain bg-black" style="opacity:0;transition:opacity .6s;"/>
+  </div>
+</div>
+
+  <div class="max-w-6xl mx-auto px-6">
+    <h3 class="text-2xl font-semibold" data-lang="pt">Serviços</h3>
+    <h3 class="text-2xl font-semibold" data-lang="en">Services</h3>
+    <p class="mt-2 text-gray-600 max-w-2xl" data-lang="pt">Escolha um tratamento que se adapte às suas necessidades.</p>
+    <p class="mt-2 text-gray-600 max-w-2xl" data-lang="en">Choose a treatment that fits your needs.</p>
+
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <article class="p-6 border rounded-lg">
+        <h4 class="font-semibold text-lg"><span data-lang="pt">Massagens Redutora, Anti Celulítica Localizada</span><span data-lang="en">Reducing / Localized Anti-Cellulite Massage</span></h4>
+        <p class="mt-2 text-sm text-gray-600"><span data-lang="pt">Sessão de 30 minutos, trabalho localizado para reduzir gordura e celulite.</span><span data-lang="en">30-minute session focusing on localized reduction and anti-cellulite techniques.</span></p>
+      </article>
+
+      <article class="p-6 border rounded-lg">
+        <h4 class="font-semibold text-lg"><span data-lang="pt">Corpo Completo</span><span data-lang="en">Full Body</span></h4>
+        <p class="mt-2 text-sm text-gray-600"><span data-lang="pt">Sessão de 30 minutos para relaxamento e alívio de tensão geral.</span><span data-lang="en">30-minute session for relaxation and general tension relief.</span></p>
+      </article>
+
+      <article class="p-6 border rounded-lg">
+        <h4 class="font-semibold text-lg"><span data-lang="pt">Drenagem Linfática Manual</span><span data-lang="en">Manual Lymphatic Drainage</span></h4>
+        <p class="mt-2 text-sm text-gray-600"><span data-lang="pt">Sessão de 30 minutos para reduzir edema e melhorar circulação linfática.</span><span data-lang="en">30-minute session to reduce swelling and improve lymphatic circulation.</span></p>
+      </article>
+
+      <article class="p-6 border rounded-lg">
+        <h4 class="font-semibold text-lg"><span data-lang="pt">Massagem Terapêutica</span><span data-lang="en">Therapeutic Massage</span></h4>
+        <p class="mt-2 text-sm text-gray-600"><span data-lang="pt">Sessão de 30 minutos focada em alívio de dores e tensões musculares.</span><span data-lang="en">30-minute session focused on relieving pain and muscle tension.</span></p>
+      </article>
+
+      <article class="p-6 border rounded-lg">
+        <h4 class="font-semibold text-lg"><span data-lang="pt">Massagem Desportiva</span><span data-lang="en">Sports Massage</span></h4>
+        <p class="mt-2 text-sm text-gray-600"><span data-lang="pt">Sessão de 45 minutos para atletas — pré/pós competição e recuperação.</span><span data-lang="en">45-minute session for athletes — pre/post event and recovery work.</span></p>
+      </article>
+
+      <article class="p-6 border rounded-lg">
+        <h4 class="font-semibold text-lg"><span data-lang="pt">DLM Pré Operatório (45m)</span><span data-lang="en">Pre-Operative Manual Lymphatic Drainage (45m)</span></h4>
+        <p class="mt-2 text-sm text-gray-600"><span data-lang="pt">Sessão de 45 minutos para preparação e cuidados pré-operatórios.</span><span data-lang="en">45-minute session for pre-operative preparation and care.</span></p>
+      </article>
+
+      <article class="p-6 border rounded-lg">
+        <h4 class="font-semibold text-lg"><span data-lang="pt">DLM Pós Operatório (1:30h)</span><span data-lang="en">Post-Operative Manual Lymphatic Drainage (1h30)</span></h4>
+        <p class="mt-2 text-sm text-gray-600"><span data-lang="pt">Sessão de 1 hora e 30 minutos para recuperação e auxílio pós-operatório.</span><span data-lang="en">1 hour 30 minutes session to assist post-operative recovery.</span></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Services updated -->
+    
+<section id="services" class="py-16">
+<div class="max-w-6xl mx-auto px-6 my-6">
+  <div class="w-full h-48 md:h-64 relative overflow-hidden rounded-lg shadow" id="services-slider">
+    <img src="assets/massage1.jpg" class="service-slide absolute inset-0 w-full h-full object-contain bg-black" style="opacity:1;transition:opacity .6s;"/>
+    <img src="assets/massage2.jpg" class="service-slide absolute inset-0 w-full h-full object-contain bg-black" style="opacity:0;transition:opacity .6s;"/>
+    <img src="assets/massage3.jpg" class="service-slide absolute inset-0 w-full h-full object-contain bg-black" style="opacity:0;transition:opacity .6s;"/>
+  </div>
+</div>
+
+<div class="max-w-6xl mx-auto px-6 my-6">
+
+</section>
+
+    <!-- About & Booking (kept previous structure) -->
+    <section id="about" class="py-12 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-semibold" data-lang="pt">Sobre Joana</h3>
+          <h3 class="text-2xl font-semibold" data-lang="en">About Joana</h3>
+          <p class="mt-3 text-gray-700" data-lang="pt">Joana Ferreira é terapeuta certificada com vários anos de experiência. Combina conhecimento de anatomia com uma abordagem calma e centrada no cliente.</p>
+          <p class="mt-3 text-gray-700" data-lang="en">Joana Ferreira is a certified therapist with several years of experience. She combines knowledge of anatomy with a calm, client-centered approach.</p>
+          <ul class="mt-4 text-sm text-gray-700 space-y-2">
+            <li data-lang="pt">✅ Certificada em técnicas clássicas e deep tissue</li>
+            <li data-lang="pt">✅ Treino de primeiros socorros</li>
+            <li data-lang="pt">✅ Deslocações ao domicílio em Santarém</li>
+            <li data-lang="en">✅ Certified in classical & deep tissue techniques</li>
+            <li data-lang="en">✅ First aid and client safety trained</li>
+            <li data-lang="en">✅ Mobile sessions in Santarém</li>
+          </ul>
+        </div>
+        
+<div class="rounded-lg overflow-hidden shadow">
+  <div id="about-slider" class="w-full h-64 relative overflow-hidden">
+    <img src="assets/massage4.jpg" class="about-slide absolute inset-0 w-full h-full object-cover" style="opacity:1;transition:opacity .6s;">
+    <img src="assets/massage5.jpg" class="about-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity .6s;">
+    <img src="assets/massage6.jpg" class="about-slide absolute inset-0 w-full h-full object-cover" style="opacity:0;transition:opacity .6s;">
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    <section id="book" class="py-16">
+      <div class="max-w-3xl mx-auto px-6">
+        <h3 class="text-2xl font-semibold" data-lang="pt">Marcar uma sessão</h3>
+        <h3 class="text-2xl font-semibold" data-lang="en">Book a session</h3>
+        <p class="mt-2 text-gray-600" data-lang="pt">Use o formulário abaixo ou contacte por email/telefone.</p>
+        <p class="mt-2 text-gray-600" data-lang="en">Use the form below or contact by email/phone.</p>
+
+        <form id="bookingForm" action="#" method="POST" class="mt-6 grid gap-4">
+          <div class="grid md:grid-cols-2 gap-4">
+            <input name="name" required placeholder="Nome completo / Full name" class="p-3 border rounded" />
+            <input name="phone" required placeholder="Telefone (ex: +351...)" class="p-3 border rounded" />
+          </div>
+
+          <input name="email" type="email" placeholder="Email (opcional) / Email (optional)" class="p-3 border rounded" />
+
+          <select name="service" class="p-3 border rounded">
+            <option value="reducing">Massagens Redutora / Reducing — 30 min</option>
+            <option value="full">Corpo Completo / Full Body — 30 min</option>
+            <option value="dlm">Drenagem Linfática Manual / MLD — 30 min</option>
+            <option value="therapeutic">Massagem Terapêutica / Therapeutic — 30 min</option>
+            <option value="sports">Massagem Desportiva / Sports — 45 min</option>
+            <option value="dlm_pre">DLM Pré Operatório (45m) / Pre-Op — 45 min</option>
+            <option value="dlm_post">DLM Pós Operatório (1h30) / Post-Op — 1h30</option>
+          </select>
+
+          <input name="date" type="date" class="p-3 border rounded md:w-1/2" />
+
+          <textarea name="notes" placeholder="Notas de saúde ou pedidos / Health notes or requests" class="p-3 border rounded" rows="4"></textarea>
+
+          <div class="flex items-center gap-3">
+            <button type="submit" id="bookingSubmit" class="px-5 py-3 rounded-md" style="background-color:#059669 !important; color:#ffffff !important;">
+              Enviar pedido / Send request
+            </button>
+            <p class="text-sm text-gray-600">ou contacte através de <a href="https://wa.me/351913230273" class="text-green-600 underline" target="_blank">WhatsApp</a></strong></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="py-12 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-2xl font-semibold" data-lang="pt">Contacto</h3>
+          <h3 class="text-2xl font-semibold" data-lang="en">Contact</h3>
+          <p class="mt-3 text-gray-700" data-lang="pt">Email: <a href="mailto:joana.ferreira.terapeuta@gmail.com" class="underline">joana.ferreira.terapeuta@gmail.com</a><br/>Telefone: <strong>+351 913 230 273</strong><br/>Local: Santarém</p>
+          <p class="mt-3 text-gray-700" data-lang="en">Email: <a href="mailto:joana.ferreira.terapeuta@gmail.com" class="underline">joana.ferreira.terapeuta@gmail.com</a><br/>Phone: <strong>+351 913 230 273</strong><br/>Location: Santarém</p>
+        </div>
+        <div>
+          <div class="w-full h-48 bg-gray-200 flex items-center justify-center text-gray-600">Map placeholder</div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-8 bg-white border-t">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-gray-600">© <span id="year"></span> Joana Ferreira. All rights reserved.</p>
+        <div class="flex items-center gap-3 text-sm text-gray-600">
+          <a href="#" class="hover:underline">Privacy</a>
+          <a href="#" class="hover:underline">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Language toggle
+    }
+    document.getElementById('langPt').addEventListener('click', ()=> showLang('pt'));
+    document.getElementById('langEn').addEventListener('click', ()=> showLang('en'));
+    showLang('pt');
+
+    // Booking form default handler (keeps mailto fallback until Formspree endpoint added)
+    
+    document.getElementById('bookingForm').addEventListener('submit', async function(e){
+      e.preventDefault();
+      const form = e.target;
+      const btn = document.getElementById('bookingSubmit') || form.querySelector('button[type="submit"]');
+      const data = {};
+      data.name = form.name.value || '';
+      data.phone = form.phone.value || '';
+      data.email = form.email.value || '';
+      data.service = form.service.value || '';
+      data.date = form.date.value || '';
+      data.notes = form.notes.value || '';
+      const fd = new FormData();
+      Object.entries(data).forEach(function(pair){ fd.append(pair[0], pair[1]); });
+      fd.append('_replyto', data.email || 'no-reply@example.com');
+      fd.append('_subject', 'Pedido de marcação / Booking request — ' + (data.name || 'Novo cliente'));
+
+      if(btn){ btn.disabled = true; btn.style.opacity = 0.6; }
+
+      try{
+        const resp = await fetch('https://formspree.io/f/mwpgqqzg', { method: 'POST', body: fd, headers: { 'Accept': 'application/json' } });
+        if(resp.ok){
+          alert('Pedido enviado. Joana vai receber o seu pedido. / Request sent — Joana will receive your request.');
+          form.reset();
+        } else {
+          const json = await resp.json().catch(function(){return null;});
+          console.error('Formspree error', json);
+          alert('Erro ao enviar. Por favor tente novamente mais tarde. / Sending error, please try again.');
+        }
+      } catch(err){
+        console.error(err);
+        alert('Erro de rede. Por favor verifique a ligação e tente de novo. / Network error.');
+      } finally {
+        if(btn){ btn.disabled = false; btn.style.opacity = 1; }
+      }
+    });
+    }
+
+// --- Auto-rotation with pause on hover ---
+let slideInterval = setInterval(nextSlide, 5000);
+
+function nextSlide(){
+  showSlide((current + 1) % slides.length);
+}
+
+// Pause on hover
+hero.addEventListener('mouseenter', () => {
+  clearInterval(slideInterval);
+});
+
+hero.addEventListener('mouseleave', () => {
+  slideInterval = setInterval(nextSlide, 5000);
+});
+
+// Attach indicator clicks (manual control)
+indicators.forEach(b =>
+  b.addEventListener('click', ()=> showSlide(Number(b.dataset.index)))
+);
+</script>
+<script>
+/* About section slider logic (uses only massage4/5/6) */
+(function(){
+  const aboutSlides = Array.from(document.querySelectorAll('#about-slider .about-slide'));
+  if(aboutSlides.length === 0) return;
+  let aCurrent = 0;
+  function showAbout(i){
+    aboutSlides.forEach((img, idx) => img.style.opacity = idx===i ? '1' : '0');
+  }
+  function nextAbout(){ aCurrent = (aCurrent+1) % aboutSlides.length; showAbout(aCurrent); }
+  let aInterval = setInterval(nextAbout, 4000);
+  const aboutSlider = document.getElementById('about-slider');
+  aboutSlider.addEventListener('mouseenter', ()=> clearInterval(aInterval));
+  aboutSlider.addEventListener('mouseleave', ()=> { aInterval = setInterval(nextAbout, 4000); });
+  showAbout(0);
+})();
+</script>
+<script>
+// Robust language toggle: hides all elements with a data-lang attribute that doesn't match the selected language.
+(function(){
+  function applyLang(lang) {
+    // All elements that explicitly declare data-lang
+    document.querySelectorAll('[data-lang]').forEach(function(el){
+      try {
+        var elLang = el.getAttribute('data-lang');
+        if (elLang === lang) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      } catch (e) {
+        // ignore
+      }
+    });
+  }
+
+  // Expose buttons
+  var btnPt = document.getElementById('langPt');
+  var btnEn = document.getElementById('langEn');
+  if (btnPt) btnPt.addEventListener('click', function(){ applyLang('pt'); localStorage.setItem('site_lang','pt'); });
+  if (btnEn) btnEn.addEventListener('click', function(){ applyLang('en'); localStorage.setItem('site_lang','en'); });
+
+  // Apply saved preference or default to pt
+  var saved = localStorage.getItem('site_lang') || 'pt';
+  // Wait for DOM to settle
+  document.addEventListener('DOMContentLoaded', function(){ applyLang(saved); });
+  // Also run once immediately in case DOM already loaded
+  applyLang(saved);
+})();
+</script>
+
+<script>
+(function(){
+  const slides = document.querySelectorAll('#services-slider .service-slide');
+  if (!slides.length) return;
+  let i = 0;
+  function show(n){
+    slides.forEach((img,idx)=>img.style.opacity = idx===n ? '1':'0');
+  }
+  function next(){
+    i = (i+1) % slides.length;
+    show(i);
+  }
+  let intv = setInterval(next, 4000);
+  const box = document.getElementById('services-slider');
+  box.addEventListener('mouseenter',()=>clearInterval(intv));
+  box.addEventListener('mouseleave',()=>intv=setInterval(next,4000));
+  show(0);
+})();
+</script>
+
+<script>
+/* Services slider (massage1/2/3) - auto-rotate + pause on hover */
+(function(){
+  const box = document.getElementById('services-slider');
+  if(!box) return;
+  const slides = Array.from(box.querySelectorAll('.service-slide'));
+  if(slides.length === 0) return;
+  let idx = 0;
+  function show(n){ slides.forEach((s,i)=> s.style.opacity = i===n ? '1' : '0'); }
+  function next(){ idx = (idx+1) % slides.length; show(idx); }
+  let iv = setInterval(next, 4000);
+  box.addEventListener('mouseenter', ()=> clearInterval(iv));
+  box.addEventListener('mouseleave', ()=> { iv = setInterval(next, 4000); });
+  show(0);
+})();
+</script>
+</body>
+</html>
